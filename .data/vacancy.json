@@ -1,0 +1,93 @@
+[
+    {
+        "model": "school.Role",
+        "pk": 1,
+        "fields": {
+            "name": "Cleaner",
+            "description": "Cleaning around the premisis",
+            "salary": 5021
+        }
+    },
+    {
+        "model": "school.Role",
+        "pk": 2,
+        "fields": {
+            "name": "Guard",
+            "description": "Gaurding around the premisis",
+            "salary": 4521
+        }
+    },
+    {
+        "model": "school.Role",
+        "pk": 3,
+        "fields": {
+            "name": "Teacher",
+            "description": "Teaching Mathematics for A'level",
+            "salary": 7021
+        }
+    },
+    {
+        "model": "school.Role",
+        "pk": 4,
+        "fields": {
+            "name": "Bus Driver",
+            "description": "Driving the school bus",
+            "salary": 5021
+        }
+    },
+    {
+        "model": "school.Role",
+        "pk": 5,
+        "fields": {
+            "name": "Garden Boy",
+            "description": "Mantaining school vegetation",
+            "salary": 2021
+        }
+    },
+    {
+        "model": "school.Vacancy",
+        "fields": {
+            "role_id": 1,
+            "information" : "The Job has some benefits: Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus in ab sit ipsam fugiat doloremque, reiciendis incidunt error. Dolorum quasi doloremque itaque non ea molestias fugit ducimus quos. Culpa, aliquam. ",
+            "date_issued" : "2021-03-01",
+
+            "closing_date" : "2023-08-12"
+        }
+    },
+    {
+        "model": "school.Vacancy",
+        "fields": {
+            "role_id": 2,
+            "information": "The Job has some benefits: Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus in ab sit ipsam fugiat doloremque, reiciendis incidunt error. Dolorum quasi doloremque itaque non ea molestias fugit ducimus quos. Culpa, aliquam. ",
+            "date_issued": "2021-03-01",
+            "closing_date": "2023-07-12"
+        }
+    },
+    {
+        "model": "school.Vacancy",
+        "fields": {
+            "role_id" : 3,
+            "information": "The Job has some benefits: Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus in ab sit ipsam fugiat doloremque, reiciendis incidunt error. Dolorum quasi doloremque itaque non ea molestias fugit ducimus quos. Culpa, aliquam. ",
+            "date_issued": "2021-03-01",
+            "closing_date": "2023-08-10"
+        }
+    },
+    {
+        "model": "school.Vacancy",
+        "fields": {
+            "role_id": 4,
+            "information": "The Job has some benefits: Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus in ab sit ipsam fugiat doloremque, reiciendis incidunt error. Dolorum quasi doloremque itaque non ea molestias fugit ducimus quos. Culpa, aliquam. ",
+            "date_issued": "2021-03-01",
+            "closing_date": "2023-01-12"
+        }
+    },
+    {
+        "model": "school.Vacancy",
+        "fields": {
+            "role_id": 5,
+            "information": "The Job has some benefits: Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus in ab sit ipsam fugiat doloremque, reiciendis incidunt error. Dolorum quasi doloremque itaque non ea molestias fugit ducimus quos. Culpa, aliquam. ",
+            "date_issued": "2021-03-01",
+            "closing_date": "2023-08-02"
+        }
+    }
+]

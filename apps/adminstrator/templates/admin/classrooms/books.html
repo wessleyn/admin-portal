@@ -1,0 +1,105 @@
+{% load static %}
+<div class="dashboard-content-one" id="replace-target">
+    <!-- Breadcubs Area Start -->
+    <div class="breadcrumbs-area">
+        <h3>Books</h3>
+        <ul>
+            <li>
+                <a href="{% url 'home' %}">Home</a>
+            </li>
+            <li>All Books</li>
+        </ul>
+    </div>
+    <!-- Breadcubs Area End -->
+    <!-- Teacher Table Area Start -->
+    <div class="card height-auto">
+        <div class="card-body">
+            <div class="heading-layout1 flex-row">
+                <div class="item-title d-flex justify-content-start">
+                    <h3>All Books Data</h3>
+                </div>
+                <div class="d-flex justify-content-end">
+                    <form class="row" role="search" hx-get="" hx-target="#replace-st-query"
+                        hx-swap="outerHTML" hx-include="[name='roll']">
+                        {% csrf_token %}
+                        <div class="col">
+                            <input name='roll' type="text" placeholder="Search by Roll ..." class="al form-control">
+                        </div>
+                        <div class="col">
+                            <input name='name' type="text" placeholder="Search by Name ..." class="al form-control">
+                        </div>
+                        <div class="col">
+                            <input name='class' type="text" placeholder="Search by Class ..." class="al form-control">
+                        </div>
+                        <div class="col">
+                            <button type="submit" class="fw-btn-fill btn-gradient-yellow">SEARCH</button>
+                        </div>
+                    </form>
+                    <div class="col-1">
+                        <a href="#"><i class="fas fa-times text-orange-red"></i></a>
+                    </div>
+                    <div class="col-1">
+                        <a href="#"><i class="fas fa-cogs text-dark-pastel-green"></i></a>
+                    </div>
+                    <div class="col-1">
+                        <a href="#"><i class="fas fa-redo-alt text-orange-peel"></i></a>
+                    </div>
+            
+            
+            
+                </div>
+            </div>
+            <div class="table-responsive">
+                <table class="table display data-table text-nowrap">
+                    <thead>
+                        <tr>
+                            <th>
+                                <div class="form-check">
+                                    <input type="checkbox" class="form-check-input checkAll">
+                                    <label class="form-check-label">ID</label>
+                                </div>
+                            </th>
+                                        <th>Name</th>
+                                        <th>Subject</th>
+                                        <th>Author</th>
+                                        <th>Edition</th>
+                                        <th>ISBN</th>
+                                        <th>Amount</th>
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+        <script>
+            $(document).ready(function () {
+                $('table').DataTable({
+                    ajax: {
+                        url: "{% url 'all-books-list' %}",
+                        dataSrc: ""
+                    },
+                    searching: false,
+                    columns: [
+                        { data: 'id' },
+                        { data: '__str__' },
+                        { data: 'subject'},
+                        { data: 'author' },
+                        { data: 'edition'},
+                        { data: 'isbn' },
+                        { data: 'quantity' }
+
+                    ], paging: true,
+                    searching: false,
+                    info: false,
+                    lengthChange: false,
+                    lengthMenu: [20, 50, 75, 100],
+                    columnDefs: [{
+                        targets: [0, -1], // column or columns numbers
+                        orderable: false // set orderable for selected columns
+                    }],
+                });
+            });
+        </script>
+        {% include 'admin/footer.html' %}
+</div>

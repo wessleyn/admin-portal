@@ -1,0 +1,176 @@
+[
+    {
+        "model": "hod.Department",
+        "pk": 1,
+        "fields": {
+            "name": "Mathematics"
+        }
+    },
+    {
+        "model": "hod.Department",
+        "pk": 2,
+        "fields": {
+            "name": "Science"        }
+    },
+    {
+        "model": "hod.Department",
+        "pk": 3,
+        "fields": {
+            "name": "English"        }
+    },
+    {
+        "model": "teacher.Teacher",
+        "pk": 1,
+        "fields": {
+            "last_name": "Goku",
+            "first_name": "Sayain",
+            "gender": "M",
+            "id_no": "#0001",
+            "address": "1312, unit J, Chitungwiza",
+            "email": "goku@gmail.com",
+            "password": "goku",
+            "d_o_b": "1981-12-12",
+            "identity": 4,
+            "subject": 1,
+            "department": 1
+        }
+    },
+    {
+        "model": "teacher.Teacher",
+        "pk": 2,
+        "fields": {
+            "last_name": "Vegeta",
+            "first_name": "Prince",
+            "gender": "M",
+            "id_no": "#0002",
+            "address": "4567, Capsule Corp, West City",
+            "email": "vegeta@gmail.com",
+            "password": "vegeta",
+            "identity": 4,
+            "subject": 2,
+            "d_o_b": "1891-12-12",
+            "department": 2
+        }
+    },
+    {
+        "model": "teacher.Teacher",
+        "pk": 3,
+        "fields": {
+            "last_name": "Bulma",
+            "first_name": "Brief",
+            "gender": "F",
+            "id_no": "#0003",
+            "address": "4567, Capsule Corp, West City",
+            "email": "bulma@gmail.com",
+            "password": "bulma",
+            "identity": 4,
+            "subject": 3,
+            "d_o_b": "1980-12-12",
+            "department": 2
+        }
+    },
+    {
+        "model": "teacher.Teacher",
+        "pk": 4,
+        "fields": {
+            "last_name": "Piccolo",
+            "first_name": "",
+            "gender": "M",
+            "id_no": "#0004",
+            "address": "Namek",
+            "email": "piccolo@gmail.com",
+            "password": "piccolo",
+            "identity": 4,
+            "subject": 4,
+            "d_o_b": "1989-12-12",
+            "department": 3
+        }
+    },
+    {
+        "model": "hod.Department",
+        "pk": 1,
+        "fields": {
+            "name": "Mathematics"
+        }
+    },
+    {
+        "model": "hod.Department",
+        "pk": 2,
+        "fields": {
+            "name": "Science"        }
+    },
+    {
+        "model": "hod.Department",
+        "pk": 3,
+        "fields": {
+            "name": "English"        }
+    },
+    {
+        "model": "teacher.Teacher",
+        "pk": 1,
+        "fields": {
+            "last_name": "Goku",
+            "first_name": "Sayain",
+            "gender": "M",
+            "id_no": "#0001",
+            "address": "1312, unit J, Chitungwiza",
+            "email": "goku@gmail.com",
+            "password": "goku",
+            "identity": 4,
+            "subject": 1,
+            "d_o_b": "1976-12-12",
+            "department": 1
+        }
+    },
+    {
+        "model": "teacher.Teacher",
+        "pk": 2,
+        "fields": {
+            "last_name": "Vegeta",
+            "first_name": "Prince",
+            "gender": "M",
+            "id_no": "#0002",
+            "address": "4567, Capsule Corp, West City",
+            "email": "vegeta@gmail.com",
+            "password": "vegeta",
+            "identity": 4,
+            "d_o_b": "1976-12-12",
+            "subject": 2,
+            "department": 2
+        }
+    },
+    {
+        "model": "teacher.Teacher",
+        "pk": 3,
+        "fields": {
+            "last_name": "Bulma",
+            "first_name": "Brief",
+            "gender": "F",
+            "id_no": "#0003",
+            "address": "4567, Capsule Corp, West City",
+            "email": "bulma@gmail.com",
+            "password": "bulma",
+            "identity": 4,
+            "subject": 3,
+            "d_o_b": "1981-12-12",
+            "department": 2
+        }
+    },
+    {
+        "model": "teacher.Teacher",
+        "pk": 4,
+        "fields": {
+            "last_name": "Piccolo",
+            "first_name": "",
+            "gender": "M",
+            "id_no": "#0004",
+            "address": "Namek",
+            "email": "piccolo@gmail.com",
+            "password": "piccolo",
+            "identity": 4,
+            "subject": 4,
+            "d_o_b": "1982-12-12",
+            "department": 3
+        }
+    }
+]

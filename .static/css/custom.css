@@ -1,0 +1,25 @@
+/* ==========================================================================
+   Selcect Input Field
+   ========================================================================== */
+
+.select2 .select2-container .select2-container--default {
+    width: 100%;
+}
+
+/* ==========================================================================
+   Table Header
+   ========================================================================== */
+
+.card-body.heading-layout1.flex-row.d-flex.justify-content-end {
+    justify-content: space-between;
+}
+
+input.al, div.col-1{
+    margin-top: 10px;
+}
+
+.fw-btn-fill.btn-gradient-yellow{
+    border-radius: 50rem;
+    font-size: smaller;
+    
+}

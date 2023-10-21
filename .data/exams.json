@@ -1,0 +1,12 @@
+[
+    {
+        "model": "classroom.Exam",
+        "pk": 1,
+        "fields": {
+            "name": "English Paper 1",
+            "subject": 4,
+            "time" : "12:00 PM - 13:00 PM",
+            "date": "2023-11-20"
+        }
+    }
+]

@@ -1,0 +1,185 @@
+{% load static %}
+<div class="dashboard-content-one"v id="replace-target">
+    <!-- Breadcubs Area Start -->
+    <div class="breadcrumbs-area">
+        <h3>Class Attendence</h3>
+        <ul>
+            <li>
+                <a href="{% url 'home' %}">Home</a>
+            </li>
+            <li>Attendence</li>
+        </ul>
+    </div>
+    <!-- Breadcubs Area End -->
+    <div class="row">
+        <!-- Student Attendence Search Area Start -->
+        <div class="col-12">
+            <div class="card">
+                <div class="card-body">
+                    <div class="heading-layout1">
+                        <div class="item-title">
+                            <h3>Student Attendence</h3>
+                        </div>
+                        <div class="dropdown">
+                            <a class="dropdown-toggle" href="#" role="button" 
+                            data-toggle="dropdown" aria-expanded="false">...</a>
+    
+                            <div class="dropdown-menu dropdown-menu-right">
+                                <a class="dropdown-item" href="#"><i class="fas fa-times text-orange-red"></i>Close</a>
+                                <a class="dropdown-item" href="#"><i class="fas fa-cogs text-dark-pastel-green"></i>Edit</a>
+                                <a class="dropdown-item" href="#"><i class="fas fa-redo-alt text-orange-peel"></i>Refresh</a>
+                            </div>
+                        </div>
+                    </div>
+                    <form class="new-added-form">
+                        <div class="row">
+                            <div class="col-xl-3 col-lg-6 col-12 form-group">
+                                <label>Select Month</label>
+                                <select class="select2">
+                                    <option value="0">Select Month</option>
+                                    <option value="1">January</option>
+                                    <option value="2">February</option>
+                                    <option value="3">March</option>
+                                    <option value="4">April</option>
+                                    <option value="5">May</option>
+                                    <option value="6">June</option>
+                                    <option value="7">July</option>
+                                    <option value="8">August</option>
+                                    <option value="9">September</option>
+                                    <option value="10">October</option>
+                                    <option value="11">November</option>
+                                    <option value="12">December</option>
+                                </select>
+                            </div>
+                            <div class="col-xl-3 col-lg-6 col-12 form-group">
+                                <label>Select Session</label>
+                                <select class="select2">
+                                    <option value="0">Select Year</option>
+                                    <option value="1">2016</option>
+                                    <option value="2">2017</option>
+                                    <option value="3">2018</option>
+                                    <option value="4">2019</option>
+                                </select>
+                            </div>
+                            <div class="col-12 form-group mg-t-8">
+                                <button type="submit" class="btn-fill-lg btn-gradient-yellow btn-hover-bluedark">Save</button>
+                                <button type="reset" class="btn-fill-lg bg-blue-dark btn-hover-yellow">Reset</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <!-- Student Attendence Search Area End -->
+        <!-- Student Attendence Area Start -->
+        <div class="col-12">
+            <div class="card">
+                <div class="card-body">
+                    <div class="heading-layout1">
+                        <div class="item-title">
+                            <h3>Attendence Sheet Of {{ class }} :  {{ month }}, {{ year }}</h3>
+                        </div>
+                        <div class="dropdown">
+                            <a class="dropdown-toggle" href="#" role="button" 
+                            data-toggle="dropdown" aria-expanded="false">...</a>
+    
+                            <div class="dropdown-menu dropdown-menu-right">
+                                <a class="dropdown-item" href="#"><i class="fas fa-times text-orange-red"></i>Close</a>
+                                <a class="dropdown-item" href="#"><i class="fas fa-cogs text-dark-pastel-green"></i>Edit</a>
+                                <a class="dropdown-item" href="#"><i class="fas fa-redo-alt text-orange-peel"></i>Refresh</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="table-responsive">
+                        <table class="table bs-table table-striped table-bordered text-nowrap" id="at-all-table">
+                            <thead>
+                                <tr>
+                                    <th class="text-left">Students</th>
+                                    {% for day in month_days %}
+                                        <th> {{ day}} </th>
+                                    {% endfor %}
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <!-- <tr>
+                                    <td class="text-left">Michele Johnson</td>
+                                    <td><i class="fas fa-check text-success"></i></td>
+                                    <td><i class="fas fa-check text-success"></i></td>
+                                    <td><i class="fas fa-check text-success"></i></td>
+                                    <td><i class="fas fa-times text-danger"></i></td>
+                                    <td><i class="fas fa-check text-success"></i></td>
+                                    <td><i class="fas fa-check text-success"></i></td>
+                                    <td>-</td>
+                                    <td><i class="fas fa-times text-danger"></i></td>
+                                    <td><i class="fas fa-check text-success"></i></td>
+                                    <td><i class="fas fa-check text-success"></i></td>
+                                    <td><i class="fas fa-check text-success"></i></td>
+                                    <td><i class="fas fa-check text-success"></i></td>
+                                    <td><i class="fas fa-times text-danger"></i></td>
+                                    <td>-</td>
+                                    <td><i class="fas fa-check text-success"></i></td>
+                                    <td><i class="fas fa-check text-success"></i></td>
+                                    <td><i class="fas fa-check text-success"></i></td>
+                                    <td><i class="fas fa-times text-danger"></i></td>
+                                    <td><i class="fas fa-check text-success"></i></td>
+                                    <td><i class="fas fa-check text-success"></i></td>
+                                    <td>-</td>
+                                    <td><i class="fas fa-check text-success"></i></td>
+                                    <td><i class="fas fa-check text-success"></i></td>
+                                    <td><i class="fas fa-times text-danger"></i></td>
+                                    <td></td>
+                                    <td><i class="fas fa-check text-success"></i></td>
+                                    <td><i class="fas fa-check text-success"></i></td>
+                                    <td>-</td>
+                                    <td><i class="fas fa-check text-success"></i></td>
+                                    <td><i class="fas fa-check text-success"></i></td>
+                                    <td>-</td>
+                                </tr> -->
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Student Attendence Area End -->
+{% include 'admin/footer.html' %}
+</div>
+
+<script>
+    $('.select2').select2()
+    $('.select2.select2-container.select2-container--default').css('width', '100%');
+    $(document).ready(function () {
+        $('#at-all-table').DataTable(
+            {
+                ajax : { url : "{% url 'all-attendencies-list' class.pk %}", dataSrc : ''},
+                
+                    searching: false,
+                columns: [
+                    { data : 'name'},
+                {% for month in month_days %}
+                    { 
+                        data: 'record.{{ month }}',
+                        render : function(data){
+                            if (data === 1){
+                                return '<i class="fas fa-check text-success"></i>'
+                            }else{
+                                return '<i class="fas fa-times text-danger"></i>'
+                            }
+                        }
+                    },
+                {% endfor %}
+                ],
+                paging: true,
+                    searching: false,
+                    info: false,
+                    lengthChange: false,
+                    lengthMenu: [20, 50, 75, 100],
+                    columnDefs: [{
+                        targets: [0, -1], // column or columns numbers
+                        orderable: false // set orderable for selected columns
+                    }],
+            }
+        )
+    })
+</script>

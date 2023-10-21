@@ -1,0 +1,597 @@
+[
+    {
+        "model": "student.Parent",
+        "pk": 1,
+        "fields": {
+            "last_name": "wASd",
+            "first_name": "nyz",
+            "gender": "M",
+            "address": "12213, unit J, Chitungwiza",
+            "id_no": "#0001",
+            "profile_pic": "student2.png",
+            "email": "wewe@gmail.com",
+            "password": "gowerku",
+            "identity": 7,
+            "occupation": "Coder"
+        }
+    },
+    {
+        "model": "student.Student",
+        "pk": 1,
+        "fields": {
+            "last_name": "wd",
+            "first_name": "nyz",
+            "gender": "M",
+            "d_o_b": "2001-12-12",
+            "address": "12213, unit J, Chitungwiza",
+            "id_no": "#0001",
+            "profile_pic": "student1.png",
+            "email": "wen12@gmail.com",
+            "password": "goku",
+            "identity": 5,
+            "classroom": 1,
+            "combination": 1,
+            "admission_date": "2015-12-12",
+            "parent": 1
+        }
+    },
+    {
+        "model": "student.Student",
+        "pk": 2,
+        "fields": {
+            "last_name": "Dea",
+            "first_name": "nyz",
+            "gender": "F",
+            "d_o_b": "2003-2-12",
+            "address": "12213, unit J, Chitungwiza",
+            "id_no": "#0002",
+            "profile_pic": "student2.png",
+            "email": "dea@gmail.com",
+            "password": "adadasd",
+            "identity": 5,
+            "classroom": 1,
+            "combination": 1,
+            "admission_date": "2016-12-12",
+            "parent": 1
+        }
+    },
+    {
+        "model": "student.Parent",
+        "pk": 2,
+        "fields": {
+            "last_name": "Smith",
+            "first_name": "John",
+            "gender": "M",
+            "address": "123 Main St",
+            "id_no": "#0002",
+            "profile_pic": "parent2.png",
+            "email": "johnsmith@gmail.com",
+            "password": "password123",
+            "identity": 7,
+            "occupation": "Engineer"
+        }
+    },
+    {
+        "model": "student.Student",
+        "pk": 3,
+        "fields": {
+            "last_name": "Johnson",
+            "first_name": "Emily",
+            "gender": "F",
+            "d_o_b": "2004-05-10",
+            "address": "456 Elm St",
+            "id_no": "#0003",
+            "profile_pic": "student3.png",
+            "email": "emilyjohnson@gmail.com",
+            "password": "password456",
+            "identity": 5,
+            "classroom": 1,
+            "combination": 1,
+            "admission_date": "2017-09-01",
+            "parent": 2
+        }
+    },
+    {
+        "model": "student.Parent",
+        "pk": 3,
+        "fields": {
+            "last_name": "Brown",
+            "first_name": "Sarah",
+            "gender": "F",
+            "address": "789 Oak St",
+            "id_no": "#0004",
+            "profile_pic": "parent3.png",
+            "email": "sarahbrown@gmail.com",
+            "password": "password789",
+            "identity": 7,
+            "occupation": "Teacher"
+        }
+    },
+    {
+        "model": "student.Student",
+        "pk": 4,
+        "fields": {
+            "last_name": "Davis",
+            "first_name": "Michael",
+            "gender": "M",
+            "d_o_b": "2002-08-15",
+            "address": "1010 Pine St",
+            "id_no": "#0005",
+            "profile_pic": "student4.png",
+            "email": "michaeldavis@gmail.com",
+            "password": "password101",
+            "identity": 5,
+            "classroom": 1,
+            "combination": 1,
+            "admission_date": "2016-03-20",
+            "parent": 3
+        }
+    },
+    {
+        "model": "student.Parent",
+        "pk": 4,
+        "fields": {
+            "last_name": "Wilson",
+            "first_name": "Jessica",
+            "gender": "F",
+            "address": "1111 Maple St",
+            "id_no": "#0006",
+            "profile_pic": "parent4.png",
+            "email": "jessicawilson@gmail.com",
+            "password": "password111",
+            "identity": 7,
+            "occupation": "Nurse"
+        }
+    },
+    {
+        "model": "student.Student",
+        "pk": 5,
+        "fields": {
+            "last_name": "Miller",
+            "first_name": "Daniel",
+            "gender": "M",
+            "d_o_b": "2003-11-25",
+            "address": "1212 Cedar St",
+            "id_no": "#0007",
+            "profile_pic": "student5.png",
+            "email": "danielmiller@gmail.com",
+            "password": "password121",
+            "identity": 5,
+            "classroom": 1,
+            "combination": 1,
+            "admission_date": "2017-06-15",
+            "parent": 4
+        }
+    },
+    {
+        "model": "student.Parent",
+        "pk": 5,
+        "fields": {
+            "last_name": "Taylor",
+            "first_name": "Olivia",
+            "gender": "F",
+            "address": "1313 Walnut St",
+            "id_no": "#0008",
+            "profile_pic": "parent5.png",
+            "email": "oliviataylor@gmail.com",
+            "password": "password131",
+            "identity": 7,
+            "occupation": "Lawyer"
+        }
+    },
+    {
+        "model": "student.Student",
+        "pk": 6,
+        "fields": {
+            "last_name": "Anderson",
+            "first_name": "Ethan",
+            "gender": "M",
+            "d_o_b": "2004-02-18",
+            "address": "1414 Oak St",
+            "id_no": "#0009",
+            "profile_pic": "student6.png",
+            "email": "ethananderson@gmail.com",
+            "password": "password141",
+            "identity": 5,
+            "classroom": 1,
+            "combination": 1,
+            "admission_date": "2018-01-10",
+            "parent": 5
+        }
+    },
+    {
+        "model": "student.Parent",
+        "pk": 6,
+        "fields": {
+            "last_name": "Thomas",
+            "first_name": "Sophia",
+            "gender": "F",
+            "address": "1515 Pine St",
+            "id_no": "#0010",
+            "profile_pic": "parent6.png",
+            "email": "sophiathomas@gmail.com",
+            "password": "password151",
+            "identity": 7,
+            "occupation": "Doctor"
+        }
+    },
+    {
+        "model": "student.Student",
+        "pk": 7,
+        "fields": {
+            "last_name": "Martinez",
+            "first_name": "Alexander",
+            "gender": "M",
+            "d_o_b": "2003-07-20",
+            "address": "1616 Elm St",
+            "id_no": "#0011",
+            "profile_pic": "student7.png",
+            "email": "alexandermartinez@gmail.com",
+            "password": "password161",
+            "identity": 5,
+            "classroom": 1,
+            "combination": 1,
+            "admission_date": "2017-12-05",
+            "parent": 6
+        }
+    },
+    {
+        "model": "student.Parent",
+        "pk": 7,
+        "fields": {
+            "last_name": "Garcia",
+            "first_name": "Isabella",
+            "gender": "F",
+            "address": "1717 Maple St",
+            "id_no": "#0012",
+            "profile_pic": "parent7.png",
+            "email": "isabellagarcia@gmail.com",
+            "password": "password171",
+            "identity": 7,
+            "occupation": "Artist"
+        }
+    },
+    {
+        "model": "student.Student",
+        "pk": 8,
+        "fields": {
+            "last_name": "Lopez",
+            "first_name": "William",
+            "gender": "M",
+            "d_o_b": "2002-04-05",
+            "address": "1818 Cedar St",
+            "id_no": "#0013",
+            "profile_pic": "student8.png",
+            "email": "williamlopez@gmail.com",
+            "password": "password181",
+            "identity": 5,
+            "classroom": 1,
+            "combination": 1,
+            "admission_date": "2016-09-20",
+            "parent": 7
+        }
+    },
+    {
+        "model": "student.Parent",
+        "pk": 8,
+        "fields": {
+            "last_name": "Hernandez",
+            "first_name": "Mia",
+            "gender": "F",
+            "address": "1919 Oak St",
+            "id_no": "#0014",
+            "profile_pic": "parent8.png",
+            "email": "miahernandez@gmail.com",
+            "password": "password191",
+            "identity": 7,
+            "occupation": "Accountant"
+        }
+    },
+    {
+        "model": "student.Student",
+        "pk": 9,
+        "fields": {
+            "last_name": "Gonzalez",
+            "first_name": "James",
+            "gender": "M",
+            "d_o_b": "2003-10-12",
+            "address": "2020 Pine St",
+            "id_no": "#0015",
+            "profile_pic": "student9.png",
+            "email": "jamesgonzalez@gmail.com",
+            "password": "password202",
+            "identity": 5,
+            "classroom": 1,
+            "combination": 1,
+            "admission_date": "2017-05-10",
+            "parent": 8
+        }
+    },
+    {
+        "model": "student.Parent",
+        "pk": 9,
+        "fields": {
+            "last_name": "Rodriguez",
+            "first_name": "Ava",
+            "gender": "F",
+            "address": "2121 Elm St",
+            "id_no": "#0016",
+            "profile_pic": "parent9.png",
+            "email": "avarodriguez@gmail.com",
+            "password": "password212",
+            "identity": 7,
+            "occupation": "Engineer"
+        }
+    },
+    {
+        "model": "student.Student",
+        "pk": 10,
+        "fields": {
+            "last_name": "Perez",
+            "first_name": "Benjamin",
+            "gender": "M",
+            "d_o_b": "2004-01-08",
+            "address": "2222 Maple St",
+            "id_no": "#0017",
+            "profile_pic": "student10.png",
+            "email": "benjaminperez@gmail.com",
+            "password": "password222",
+            "identity": 5,
+            "classroom": 1,
+            "combination": 1,
+            "admission_date": "2018-02-15",
+            "parent": 9
+        }
+    },
+    {
+        "model": "student.Parent",
+        "pk": 10,
+        "fields": {
+            "last_name": "Lee",
+            "first_name": "Charlotte",
+            "gender": "F",
+            "address": "2323 Cedar St",
+            "id_no": "#0018",
+            "profile_pic": "parent10.png",
+            "email": "charlottelee@gmail.com",
+            "password": "password232",
+            "identity": 7,
+            "occupation": "Teacher"
+        }
+    },
+    {
+        "model": "student.Student",
+        "pk": 11,
+        "fields": {
+            "last_name": "Sanchez",
+            "first_name": "David",
+            "gender": "M",
+            "d_o_b": "2003-06-15",
+            "address": "2424 Oak St",
+            "id_no": "#0019",
+            "profile_pic": "student11.png",
+            "email": "davidsanchez@gmail.com",
+            "password": "password242",
+            "identity": 5,
+            "classroom": 1,
+            "combination": 1,
+            "admission_date": "2017-11-01",
+            "parent": 10
+        }
+    },
+    {
+        "model": "student.Parent",
+        "pk": 11,
+        "fields": {
+            "last_name": "Smith",
+            "first_name": "Amelia",
+            "gender": "F",
+            "address": "2525 Pine St",
+            "id_no": "#0020",
+            "profile_pic": "parent11.png",
+            "email": "ameliasmith@gmail.com",
+            "password": "password252",
+            "identity": 7,
+            "occupation": "Nurse"
+        }
+    },
+    {
+        "model": "student.Student",
+        "pk": 12,
+        "fields": {
+            "last_name": "Rivera",
+            "first_name": "Joseph",
+            "gender": "M",
+            "d_o_b": "2002-03-25",
+            "address": "2626 Elm St",
+            "id_no": "#0021",
+            "profile_pic": "student12.png",
+            "email": "josephrivera@gmail.com",
+            "password": "password262",
+            "identity": 5,
+            "classroom": 1,
+            "combination": 1,
+            "admission_date": "2016-08-10",
+            "parent": 11
+        }
+    },
+    {
+        "model": "student.Parent",
+        "pk": 12,
+        "fields": {
+            "last_name": "Torres",
+            "first_name": "Sofia",
+            "gender": "F",
+            "address": "2727 Maple St",
+            "id_no": "#0022",
+            "profile_pic": "parent12.png",
+            "email": "sofiatorres@gmail.com",
+            "password": "password272",
+            "identity": 7,
+            "occupation": "Lawyer"
+        }
+    },
+    {
+        "model": "student.Student",
+        "pk": 13,
+        "fields": {
+            "last_name": "Gomez",
+            "first_name": "Daniel",
+            "gender": "M",
+            "d_o_b": "2003-09-20",
+            "address": "2828 Cedar St",
+            "id_no": "#0023",
+            "admission_date": "2019-05-10",
+            "profile_pic": "student13.png",
+            "email": "asdhkja@gmail.com",
+            "password": "passwordasd272",
+            "parent" : 12,
+            "identity": 7
+        }
+    },
+    {
+        "model": "student.Student",
+        "pk": 14,
+        "fields": {
+            "last_name": "Gomez",
+            "first_name": "Daniel",
+            "gender": "M",
+            "d_o_b": "2003-09-20",
+            "address": "2828 Cedar St",
+            "id_no": "#0023",
+            "profile_pic": "student14.png",
+            "email": "DanielGomez@gmail.com",
+            "password": "passwordasd272",
+            "identity": 7,
+            "classroom": 1,
+            "combination": 1,
+            "admission_date": "2019-05-10",
+            "parent": 12
+        }
+    },
+    {
+        "model": "student.Parent",
+        "pk": 13,
+        "fields": {
+            "last_name": "Gomez",
+            "first_name": "Maria",
+            "gender": "F",
+            "address": "2929 Oak St",
+            "id_no": "#0024",
+            "profile_pic": "parent13.png",
+            "email": "mariagomez@gmail.com",
+            "password": "passwordasd292",
+            "identity": 7,
+            "occupation": "Teacher"
+        }
+    },
+    {
+        "model": "student.Student",
+        "pk": 15,
+        "fields": {
+            "last_name": "Lopez",
+            "first_name": "Sophia",
+            "gender": "F",
+            "d_o_b": "2004-02-18",
+            "address": "3030 Pine St",
+            "id_no": "#0025",
+            "profile_pic": "student15.png",
+            "email": "sophialopez@gmail.com",
+            "password": "passwordasd303",
+            "identity": 5,
+            "classroom": 1,
+            "combination": 1,
+            "admission_date": "2020-01-15",
+            "parent": 13
+        }
+    },
+    {
+        "model": "student.Parent",
+        "pk": 14,
+        "fields": {
+            "last_name": "Lopez",
+            "first_name": "Carlos",
+            "gender": "M",
+            "address": "3131 Maple St",
+            "id_no": "#0026",
+            "profile_pic": "parent14.png",
+            "email": "carloslopez@gmail.com",
+            "password": "passwordasd313",
+            "identity": 7,
+            "occupation": "Engineer"
+        }
+    },
+    {
+        "model": "student.Student",
+        "pk": 16,
+        "fields": {
+            "last_name": "Hernandez",
+            "first_name": "Emma",
+            "gender": "F",
+            "d_o_b": "2003-07-12",
+            "address": "3232 Elm St",
+            "id_no": "#0027",
+            "profile_pic": "student16.png",
+            "email": "emmahernandez@gmail.com",
+            "password": "passwordasd323",
+            "identity": 5,
+            "classroom": 1,
+            "combination": 1,
+            "admission_date": "2018-09-01",
+            "parent": 14
+        }
+    },
+    {
+        "model": "student.Parent",
+        "pk": 15,
+        "fields": {
+            "last_name": "Hernandez",
+            "first_name": "Isabella",
+            "gender": "F",
+            "address": "3333 Cedar St",
+            "id_no": "#0028",
+            "profile_pic": "parent15.png",
+            "email": "isabellahernandez@gmail.com",
+            "password": "passwordasd333",
+            "identity": 7,
+            "occupation": "Doctor"
+        }
+    },
+    {
+        "model": "student.Student",
+        "pk": 17,
+        "fields": {
+            "last_name": "Gonzalez",
+            "first_name": "Ethan",
+            "gender": "M",
+            "d_o_b": "2004-03-28",
+            "address": "3434 Oak St",
+            "id_no": "#0029",
+            "profile_pic": "student17.png",
+            "email": "ethangonzalez@gmail.com",
+            "password": "passwordasd343",
+            "identity": 5,
+            "classroom": 1,
+            "combination": 1,
+            "admission_date": "2019-08-15",
+            "parent": 15
+        }
+    },
+    {
+        "model": "student.Parent",
+        "pk": 16,
+        "fields": {
+            "last_name": "Gonzalez",
+            "first_name": "Sophie",
+            "gender": "F",
+            "address": "3535 Pine St",
+            "id_no": "#0030",
+            "profile_pic": "parent16.png",
+            "email": "sophiegonzalez@gmail.com",
+            "password": "passwordasd353",
+            "identity": 7,
+            "occupation": "Lawyer"
+        }
+    }
+
+]

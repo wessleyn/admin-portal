@@ -1,0 +1,18 @@
+[
+    {
+        "model": "school.FundRaising",
+        "pk": 1,
+        "fields": {
+            "name": "Civis",
+            "earnings": 5021
+        }
+    }, 
+    {
+        "model": "school.FundRaising",
+        "pk": 2,
+        "fields": {
+            "name": "Gig",
+            "earnings": 2000
+        }
+    }
+]

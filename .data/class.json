@@ -1,0 +1,774 @@
+[
+    {
+        "model": "classroom.CombinationCategory",
+        "pk": 1,
+        "fields": {
+            "name": "Sciences"
+        }
+    },
+    {
+        "model": "classroom.CombinationCategory",
+        "pk": 2,
+        "fields": {
+            "name": "Arts"
+        }
+    },
+    {
+        "model": "classroom.CombinationCategory",
+        "pk": 3,
+        "fields": {
+            "name": "Commerce"
+        }
+    },
+    {
+        "model": "classroom.CombinationCategory",
+        "pk": 4,
+        "fields": {
+            "name": "Humanities"
+        }
+    },
+    {
+        "model": "classroom.CombinationCategory",
+        "pk": 5,
+        "fields": {
+            "name": "Technology"
+        }
+    },
+    {
+        "model": "classroom.CombinationCategory",
+        "pk": 6,
+        "fields": {
+            "name": "Languages"
+        }
+    },
+    {
+        "model": "classroom.CombinationCategory",
+        "pk": 7,
+        "fields": {
+            "name": "Social Sciences"
+        }
+    },
+    {
+        "model": "classroom.CombinationCategory",
+        "pk": 8,
+        "fields": {
+            "name": "Physical Education"
+        }
+    },
+    {
+        "model": "classroom.CombinationCategory",
+        "pk": 9,
+        "fields": {
+            "name": "Social Sciences"
+        }
+    },
+    {
+        "model": "classroom.CombinationCategory",
+        "pk": 10,
+        "fields": {
+            "name": "Humanities"
+        }
+    },
+    {
+        "model": "classroom.CombinationCategory",
+        "pk": 11,
+        "fields": {
+            "name": "Languages"
+        }
+    },
+    {
+        "model": "classroom.CombinationCategory",
+        "pk": 12,
+        "fields": {
+            "name": "Sciences"
+        }
+    },
+    {
+        "model": "classroom.Subject",
+        "pk": 1,
+        "fields": {
+            "name": "Physics",
+            "syllabus_code": "0000",
+            "syllabus_link" : "google.com",
+            "combination_category": 1
+        }
+    },
+    {
+        "model": "classroom.Subject",
+        "pk": 2,
+        "fields": {
+            "name": "Chemistry",
+            "syllabus_code": "0001",
+            "combination_category": 1
+        }
+    },
+    {
+        "model": "classroom.Subject",
+        "pk": 3,
+        "fields": {
+            "name": "Biology",
+            "syllabus_code": "0002",
+            "combination_category": 1
+        }
+    },
+    {
+        "model": "classroom.Subject",
+        "pk": 4,
+        "fields": {
+            "name": "English",
+            "syllabus_code": "0003",
+            "combination_category": 2
+        }
+    },
+    {
+        "model": "classroom.Subject",
+        "pk": 5,
+        "fields": {
+            "name": "Mathematics",
+            "syllabus_code": "0004",
+            "combination_category": 3
+        }
+    },
+    {
+        "model": "classroom.Subject",
+        "pk": 6,
+        "fields": {
+            "name": "History",
+            "syllabus_code": "0005",
+            "combination_category": 4
+        }
+    },
+    {
+        "model": "classroom.Subject",
+        "pk": 7,
+        "fields": {
+            "name": "Geography",
+            "syllabus_code": "0006",
+            "combination_category": 4
+        }
+    },
+    {
+        "model": "classroom.Subject",
+        "pk": 8,
+        "fields": {
+            "name": "Economics",
+            "syllabus_code": "0007",
+            "combination_category": 3
+        }
+    },
+    {
+        "model": "classroom.Subject",
+        "pk": 9,
+        "fields": {
+            "name": "Computer Science",
+            "syllabus_code": "0008",
+            "combination_category": 5
+        }
+    },
+    {
+        "model": "classroom.Subject",
+        "pk": 10,
+        "fields": {
+            "name": "Physical Education",
+            "syllabus_code": "0009",
+            "combination_category": 8
+        }
+    },
+    {
+        "model": "classroom.Subject",
+        "pk": 11,
+        "fields": {
+            "name": "French",
+            "syllabus_code": "0010",
+            "combination_category": 6
+        }
+    },
+    {
+        "model": "classroom.Subject",
+        "pk": 12,
+        "fields": {
+            "name": "Spanish",
+            "syllabus_code": "0011",
+            "combination_category": 6
+        }
+    },
+    {
+        "model": "classroom.Subject",
+        "pk": 13,
+        "fields": {
+            "name": "Psychology",
+            "syllabus_code": "0012",
+            "combination_category": 4
+        }
+    },
+    {
+        "model": "classroom.Subject",
+        "pk": 14,
+        "fields": {
+            "name": "Sociology",
+            "syllabus_code": "0013",
+            "combination_category": 4
+        }
+    },
+    {
+        "model": "classroom.Subject",
+        "pk": 15,
+        "fields": {
+            "name": "Business Studies",
+            "syllabus_code": "0014",
+            "combination_category": 3
+        }
+    },
+    {
+        "model": "classroom.Subject",
+        "pk": 16,
+        "fields": {
+            "name": "Art",
+            "syllabus_code": "0015",
+            "combination_category": 2
+        }
+    },
+    {
+        "model": "classroom.Subject",
+        "pk": 17,
+        "fields": {
+            "name": "Music",
+            "syllabus_code": "0016",
+            "combination_category": 2
+        }
+    },
+    {
+        "model": "classroom.Subject",
+        "pk": 18,
+        "fields": {
+            "name": "Physical Education",
+            "syllabus_code": "0017",
+            "combination_category": 8
+        }
+    },
+    {
+        "model": "classroom.ClassRoom",
+        "pk": 1,
+        "fields": {
+            "name": "Fountain",
+            "grade": 4,
+            "combination": 1,
+            "subjects": [
+                1
+            ]
+        }
+    },
+    {
+        "model": "classroom.ClassRoom",
+        "pk": 2,
+        "fields": {
+            "name": "Sunflower",
+            "grade": 5,
+            "combination": 2,
+            "subjects": [
+                2,
+                3
+            ]
+        }
+    },
+    {
+        "model": "classroom.ClassRoom",
+        "pk": 3,
+        "fields": {
+            "name": "Rose",
+            "grade": 6,
+            "combination": 3,
+            "subjects": [
+                4,
+                5
+            ]
+        }
+    },
+    {
+        "model": "classroom.ClassRoom",
+        "pk": 4,
+        "fields": {
+            "name": "Oak",
+            "grade": 7,
+            "combination": 4,
+            "subjects": [
+                1,
+                2,
+                3
+            ]
+        }
+    },
+    {
+        "model": "classroom.ClassRoom",
+        "pk": 5,
+        "fields": {
+            "name": "Maple",
+            "grade": 8,
+            "combination": 5,
+            "subjects": [
+                4,
+                5,
+                6
+            ]
+        }
+    },
+    {
+        "model": "classroom.ClassRoom",
+        "pk": 6,
+        "fields": {
+            "name": "Pine",
+            "grade": 9,
+            "combination": 6,
+            "subjects": [
+                7,
+                8,
+                9
+            ]
+        }
+    },
+    {
+        "model": "classroom.ClassRoom",
+        "pk": 7,
+        "fields": {
+            "name": "Willow",
+            "grade": 10,
+            "combination": 7,
+            "subjects": [
+                10,
+                11,
+                12
+            ]
+        }
+    },
+    {
+        "model": "classroom.ClassRoom",
+        "pk": 8,
+        "fields": {
+            "name": "Birch",
+            "grade": 11,
+            "combination": 8,
+            "subjects": [
+                13,
+                14,
+                15
+            ]
+        }
+    },
+    {
+        "model": "classroom.ClassRoom",
+        "pk": 9,
+        "fields": {
+            "name": "Cedar",
+            "grade": 12,
+            "combination": 9,
+            "subjects": [
+                16,
+                17,
+                18
+            ]
+        }
+    },
+    {
+        "model": "classroom.ClassRoom",
+        "pk": 10,
+        "fields": {
+            "name": "Lily",
+            "grade": 4,
+            "combination": 1,
+            "subjects": [
+                1,
+                2
+            ]
+        }
+    },
+    {
+        "model": "classroom.ClassRoom",
+        "pk": 11,
+        "fields": {
+            "name": "Tulip",
+            "grade": 5,
+            "combination": 2,
+            "subjects": [
+                3,
+                4
+            ]
+        }
+    },
+    {
+        "model": "classroom.ClassRoom",
+        "pk": 12,
+        "fields": {
+            "name": "Rosemary",
+            "grade": 6,
+            "combination": 3,
+            "subjects": [
+                5,
+                6
+            ]
+        }
+    },
+    {
+        "model": "classroom.ClassRoom",
+        "pk": 13,
+        "fields": {
+            "name": "Daisy",
+            "grade": 7,
+            "combination": 4,
+            "subjects": [
+                7,
+                8
+            ]
+        }
+    },
+    {
+        "model": "classroom.ClassRoom",
+        "pk": 14,
+        "fields": {
+            "name": "Sunflower",
+            "grade": 8,
+            "combination": 5,
+            "subjects": [
+                9,
+                10
+            ]
+        }
+    },
+    {
+        "model": "classroom.ClassRoom",
+        "pk": 15,
+        "fields": {
+            "name": "Orchid",
+            "grade": 9,
+            "combination": 6,
+            "subjects": [
+                11,
+                12
+            ]
+        }
+    },
+    {
+        "model": "classroom.ClassRoom",
+        "pk": 16,
+        "fields": {
+            "name": "Iris",
+            "grade": 10,
+            "combination": 7,
+            "subjects": [
+                13,
+                14
+            ]
+        }
+    },
+    {
+        "model": "classroom.ClassRoom",
+        "pk": 17,
+        "fields": {
+            "name": "Poppy",
+            "grade": 11,
+            "combination": 8,
+            "subjects": [
+                15,
+                16
+            ]
+        }
+    },
+    {
+        "model": "classroom.ClassRoom",
+        "pk": 18,
+        "fields": {
+            "name": "Marigold",
+            "grade": 12,
+            "combination": 9,
+            "subjects": [
+                17,
+                18
+            ]
+        }
+    },
+    {
+        "model": "classroom.ClassRoom",
+        "pk": 19,
+        "fields": {
+            "name": "Jasmine",
+            "grade": 4,
+            "combination": 1,
+            "subjects": [
+                1,
+                3
+            ]
+        }
+    },
+    {
+        "model": "classroom.ClassRoom",
+        "pk": 20,
+        "fields": {
+            "name": "Magnolia",
+            "grade": 5,
+            "combination": 2,
+            "subjects": [
+                2,
+                4
+            ]
+        }
+    },
+    {
+        "model": "classroom.ClassRoom",
+        "pk": 21,
+        "fields": {
+            "name": "Azalea",
+            "grade": 6,
+            "combination": 3,
+            "subjects": [
+                3,
+                5
+            ]
+        }
+    },
+    {
+        "model": "classroom.ClassRoom",
+        "pk": 22,
+        "fields": {
+            "name": "Carnation",
+            "grade": 7,
+            "combination": 4,
+            "subjects": [
+                4,
+                6
+            ]
+        }
+    },
+    {
+        "model": "classroom.ClassRoom",
+        "pk": 23,
+        "fields": {
+            "name": "Hyacinth",
+            "grade": 8,
+            "combination": 5,
+            "subjects": [
+                5,
+                7
+            ]
+        }
+    },
+    {
+        "model": "classroom.ClassRoom",
+        "pk": 24,
+        "fields": {
+            "name": "Daffodil",
+            "grade": 9,
+            "combination": 6,
+            "subjects": [
+                6,
+                8
+            ]
+        }
+    },
+    {
+        "model": "classroom.ClassRoom",
+        "pk": 25,
+        "fields": {
+            "name": "Peony",
+            "grade": 10,
+            "combination": 7,
+            "subjects": [
+                7,
+                9
+            ]
+        }
+    },
+    {
+        "model": "classroom.ClassRoom",
+        "pk": 26,
+        "fields": {
+            "name": "Lotus",
+            "grade": 11,
+            "combination": 8,
+            "subjects": [
+                8,
+                10
+            ]
+        }
+    },
+    {
+        "model": "classroom.ClassRoom",
+        "pk": 27,
+        "fields": {
+            "name": "Cherry Blossom",
+            "grade": 12,
+            "combination": 9,
+            "subjects": [
+                9,
+                11
+            ]
+        }
+    },
+    {
+        "model": "classroom.ClassRoom",
+        "pk": 28,
+        "fields": {
+            "name": "Hibiscus",
+            "grade": 4,
+            "combination": 1,
+            "subjects": [
+                10,
+                12
+            ]
+        }
+    },
+    {
+        "model": "classroom.ClassRoom",
+        "pk": 29,
+        "fields": {
+            "name": "Lavender",
+            "grade": 5,
+            "combination": 2,
+            "subjects": [
+                11,
+                13
+            ]
+        }
+    },
+    {
+        "model": "classroom.ClassRoom",
+        "pk": 30,
+        "fields": {
+            "name": "Rosewood",
+            "grade": 6,
+            "combination": 3,
+            "subjects": [
+                12,
+                14
+            ]
+        }
+    },
+    {
+        "model": "classroom.ClassRoom",
+        "pk": 31,
+        "fields": {
+            "name": "Sage",
+            "grade": 7,
+            "combination": 4,
+            "subjects": [
+                13,
+                15
+            ]
+        }
+    },
+    {
+        "model": "classroom.ClassRoom",
+        "pk": 32,
+        "fields": {
+            "name": "Thyme",
+            "grade": 8,
+            "combination": 5,
+            "subjects": [
+                14,
+                16
+            ]
+        }
+    },
+    {
+        "model": "classroom.ClassRoom",
+        "pk": 33,
+        "fields": {
+            "name": "Basil",
+            "grade": 9,
+            "combination": 6,
+            "subjects": [
+                15,
+                17
+            ]
+        }
+    },
+    {
+        "model": "classroom.ClassRoom",
+        "pk": 34,
+        "fields": {
+            "name": "Mint",
+            "grade": 10,
+            "combination": 7,
+            "subjects": [
+                16,
+                18
+            ]
+        }
+    },
+    {
+        "model": "classroom.ClassRoom",
+        "pk": 35,
+        "fields": {
+            "name": "Oregano",
+            "grade": 11,
+            "combination": 8,
+            "subjects": [
+                17,
+                1
+            ]
+        }
+    },
+    {
+        "model": "classroom.ClassRoom",
+        "pk": 36,
+        "fields": {
+            "name": "Parsley",
+            "grade": 12,
+            "combination": 9,
+            "subjects": [
+                18,
+                2
+            ]
+        }
+    },
+    {
+        "model": "classroom.ClassRoom",
+        "pk": 37,
+        "fields": {
+            "name": "Saffron",
+            "grade": 4,
+            "combination": 1,
+            "subjects": [
+                3,
+                5
+            ]
+        }
+    },
+    {
+        "model": "classroom.ClassRoom",
+        "pk": 38,
+        "fields": {
+            "name": "Cumin",
+            "grade": 5,
+            "combination": 2,
+            "subjects": [
+                4,
+                6
+            ]
+        }
+    },
+    {
+        "model": "classroom.ClassRoom",
+        "pk": 39,
+        "fields": {
+            "name": "Coriander",
+            "grade": 6,
+            "combination": 3,
+            "subjects": [
+                5,
+                7
+            ]
+        }
+    },
+    {
+        "model": "classroom.ClassRoom",
+        "pk": 40,
+        "fields": {
+            "name": "Turmeric",
+            "grade": 7,
+            "combination": 4,
+            "subjects": [
+                6,
+                8
+            ]
+        }
+    }
+]

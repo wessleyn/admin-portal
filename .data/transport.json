@@ -1,0 +1,28 @@
+[
+        {
+            "model": "school.Driver",
+            "pk": 1,
+            "fields": {
+                "last_name": "Thanos",
+                "first_name": "Alien",
+                "gender": "M",
+                "id_no": "#0001",
+                "address": "a31, unit J, Messechurch",
+                "email": "than@gmail.com",
+                "contact": "071 654 3897",
+                "password": "infinite",
+                "d_o_b": "1921-12-12",
+                "identity": 8,
+                "driver_license": "DLNC025936"
+            }
+        },
+        {
+            "model": "school.Vehicle",
+            "pk": 1,
+            "fields": {
+                "route": "Asgard",
+                "no": "10001",
+                "driver" : 1
+            }
+        }
+]

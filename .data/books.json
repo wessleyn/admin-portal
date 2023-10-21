@@ -1,0 +1,122 @@
+[
+    {
+        "model": "classroom.Book",
+        "pk": 1,
+        "fields": {
+            "name": "Pemberton Mathematics for Cambridge IGCSE(Extended)",
+            "author": "Sue Pemberton",
+            "subject" : 5,
+            "edition": 3,
+            "isbn": "9780198428466",
+            "quantity": 4
+        }
+    },
+    {
+        "model": "classroom.Book",
+        "pk": 2,
+        "fields": {
+            "name": "English Literature: A Very Short Introduction",
+            "author": "Jonathan Bate",
+            "subject": 4,
+            "edition": 1,
+            "isbn": "9780192801590",
+            "quantity": 2
+        }
+    },
+    {
+        "model": "classroom.Book",
+        "pk": 3,
+        "fields": {
+            "name": "Biology: Concepts and Connections",
+            "author": "Neil A. Campbell",
+            "subject": 3,
+            "edition": 8,
+            "isbn": "9780321885326",
+            "quantity": 5
+        }
+    },
+    {
+        "model": "classroom.Book",
+        "pk": 4,
+        "fields": {
+            "name": "History of the World in 100 Objects",
+            "author": "Neil MacGregor",
+            "subject": 6,
+            "edition": 1,
+            "isbn": "9780670022700",
+            "quantity": 3
+        }
+    },
+    {
+        "model": "classroom.Book",
+        "pk": 5,
+        "fields": {
+            "name": "Spanish Grammar in Context",
+            "author": "Juan Kattán-Ibarra",
+            "subject": 2,
+            "edition": 2,
+            "isbn": "9780340807669",
+            "quantity": 6
+        }
+    },
+      {
+        "model": "classroom.Book",
+        "pk": 6,
+        "fields": {
+            "name": "Chemistry: The Central Science",
+            "author": "Theodore L. Brown",
+            "subject": 1,
+            "edition": 14,
+            "isbn": "9780134414232",
+            "quantity": 3
+        }
+    },
+    {
+        "model": "classroom.Book",
+        "pk": 7,
+        "fields": {
+            "name": "Introduction to Psychology",
+            "author": "James W. Kalat",
+            "subject": 13,
+            "edition": 11,
+            "isbn": "9781305271555",
+            "quantity": 4
+        }
+    },
+    {
+        "model": "classroom.Book",
+        "pk": 8,
+        "fields": {
+            "name": "Sociology: A Brief Introduction",
+            "author": "Richard T. Schaefer",
+            "subject": 14,
+            "edition": 13,
+            "isbn": "9780078027109",
+            "quantity": 2
+        }
+    },
+    {
+        "model": "classroom.Book",
+        "pk": 9,
+        "fields": {
+            "name": "Music Theory for Dummies",
+            "author": "Michael Pilhofer",
+            "subject": 17,
+            "edition": 4,
+            "isbn": "9781118990940",
+            "quantity": 3
+        }
+    },
+    {
+        "model": "classroom.Book",
+        "pk": 10,
+        "fields": {
+            "name": "Physical Education and Sport in Schools",
+            "author": "Ken Hardman",
+            "subject": 18,
+            "edition": 4,
+            "isbn": "9780415579208",
+            "quantity": 5
+        }
+    }
+]

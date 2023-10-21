@@ -1,0 +1,46 @@
+{% load static %}
+
+<tbody id="replace-st-query">
+    {% for student in students_query %}
+    <tr>
+        <td>
+            <div class="form-check">
+                <input type="checkbox" class="form-check-input">
+                <label class="form-check-label">{{ student.id_no }}</label>
+            </div>
+        </td>
+        <td class="text-center"><img src="{% static 'img/figure/student2.png' %}" alt="student"></td>
+        <td>{{ student }}</td>
+        <td>{{ student.gender }}</td>
+        <td>{{ student.class }}</td>
+        <td>{{ student.parent }}</td>
+        <td>{{  student.address }}</td>
+        <td>{{ student.d_o_b }}</td>
+        <td>{{ student.email }}</td>
+        <td>
+            <div class="dropdown">
+                <a class="dropdown-toggle" href="#" role="button" data-toggle="dropdown"
+                    aria-expanded="false">...</a>
+
+                                    <div class="dropdown-menu dropdown-menu-right">
+                                        <a class="dropdown-item" href="#"><i
+                                                class="fas fa-times text-orange-red"></i>
+                                            <span>Close</span>
+                                            </a>
+                                        <a class="dropdown-item" href="#"><i
+                                                class="fas fa-cogs text-dark-pastel-green"></i>
+                                            <span>Edit</span>
+                                            </a>
+                    <a class="dropdown-item" href="#">
+                        <i class="fas fa-redo-alt text-orange-peel"></i>
+
+                        <span>
+                            Refresh
+                        </span>
+                    </a>
+                </div>
+            </div>
+        </td>
+    </tr>
+    {% endfor %}
+</tbody>

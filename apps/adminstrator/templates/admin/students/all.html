@@ -1,0 +1,124 @@
+{% load static %}
+<div class="dashboard-content-one" id="replace-target">
+    <!-- Breadcubs Area Start -->
+    <div class="breadcrumbs-area">
+        <ul>
+            <li>
+                <a href="{% url 'home' %}">Home</a>
+            </li>
+            <li>All Students</li>
+        </ul>
+    </div>
+    <!-- Breadcubs Area End -->
+    <!-- Student Table Area Start -->
+    <div class="card height-auto">
+        <div class="card-body">
+            <div class="heading-layout1 flex-row">
+                <div class="item-title d-flex justify-content-start">
+                    <h3>All Students Data</h3>
+                </div>
+                <div class="d-flex justify-content-end">
+                    <form class="row" role="search" hx-get="" hx-target="#replace-st-query"
+                        hx-swap="outerHTML" hx-include="[name='roll']">
+                        {% csrf_token %}
+                        <div class="col">
+                            <input name='roll' type="text" placeholder="Search by Roll ..." class="al form-control">
+                        </div>
+                        <div class="col">
+                            <input name='name' type="text" placeholder="Search by Name ..." class="al form-control">
+                        </div>
+                        <div class="col">
+                            <input name='class' type="text" placeholder="Search by Class ..." class="al form-control">
+                        </div>
+                        <div class="col">
+                            <button type="submit" class="fw-btn-fill btn-gradient-yellow">SEARCH</button>
+                        </div>
+                    </form>
+                    <div class="col-1">
+                        <a href="#"><i class="fas fa-times text-orange-red"></i></a>
+                    </div>
+                    <div class="col-1">
+                        <a href="#"><i class="fas fa-cogs text-dark-pastel-green"></i></a>
+                    </div>
+                    <div class="col-1">
+                        <a href="#"><i class="fas fa-redo-alt text-orange-peel"></i></a>
+                    </div>
+
+
+
+                </div>
+            </div>
+            <div class="table-responsive">
+                <table class="table display data-table text-nowrap" id="st-all-table">
+                    <thead>
+                        <tr>
+                            <th>
+                                <div class="form-check">
+                                    <input type="checkbox" class="form-check-input checkAll">
+                                    <label class="form-check-label">Roll</label>
+                                </div>
+                            </th>
+                            <th>Photo</th>
+                            <th>Name</th>
+                            <th>Gender</th>
+                            <th>Class</th>
+                            <th>Parents</th>
+                            <th>Address</th>
+                            <th>Date Of Birth</th>
+                            <th>Areas</th>
+                            <th>Status</th>
+                            <th>E-mail</th>
+                        </tr>
+                    </thead>
+                    <tbody id="replace-st-query">
+
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    {% include 'admin/footer.html' %}
+    <script>
+      $(document).ready(function () {
+            $('#st-all-table').DataTable({
+                ajax: {
+                    url: "{% url 'all-students-list' %}",
+                    dataSrc: ""
+                },
+                searching: false,
+                        columns: [
+                            {  data : 'id'},
+                            {  data : 'profile_pic', render: (data, type, row) => {return '<img src="' + data + '" alt="Profile" >';} },
+                            {  data : '__str__'},
+                            {  data : 'gender'},
+                            {  data : 'classroom'},
+                            {  data : 'parent'},
+                            {  data : 'address'},
+                            {  data : 'd_o_b' },
+                            {  data : 'fees', render : (data) => {return  '$' + data} },
+                            {  data : 'status'},
+                            {  data : 'email'}
+                        
+                        ], paging: true,
+        searching: false,
+        info: false,
+        lengthChange: false,
+        lengthMenu: [20, 50, 75, 100],
+    columnDefs: [
+      {
+        targets: 9, // index of the "Status" column
+        createdCell: function (td, cellData, rowData, row, col) {
+          if (cellData === 'Paid') {
+            $(td).addClass('badge badge-pill badge-success d-block mg-t-8');
+            $(td).text('Paid');
+          } else {
+            $(td).addClass('badge badge-pill badge-danger d-block mg-t-8');
+            $(td).text('Unpaid');
+          }
+        }
+      }
+    ]
+  });
+});
+    </script>
+</div>

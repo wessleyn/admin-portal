@@ -1,0 +1,55 @@
+[
+    {
+        "model" : "student.StudentAttendance",
+        "pk"  : 1,
+        "fields" : {
+            "data" : 0,
+            "student": 1
+        }
+    },
+    {
+        "model" : "student.StudentAttendance",
+        "pk"  : 2,
+        "fields" : {
+            "data" : 1,
+            "student": 2
+        }
+    },
+    {
+        "model" : "student.StudentAttendance",
+        "pk"  : 3,
+        "fields" : {
+            "data" : 1,
+            "student": 3
+        }
+    },
+    {
+        "model" : "student.StudentAttendance",
+        "pk"  : 4,
+        "fields" : {
+            "data" : 1,
+            "student": 4
+        }
+    },
+    {
+        "model" : "student.StudentAttendance",
+        "pk"  : 5,
+        "fields" : {
+            "data" : 1,
+            "student": 5
+        }
+    },
+    {
+        "model": "classroom.ClassAttendance",
+        "pk": 1,
+        "fields" :{
+            "classroom": 1,
+            "year": "2021",
+            "month":  "January",
+            "students": [
+                1,2,3,4,5
+            ]
+        }
+    }
+]
+
