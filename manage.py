@@ -7,7 +7,7 @@ from pathlib import Path
 DIREC = Path(__file__).resolve().parent
 
 def remove_pycache_and_migrations():
-    for root, dirs, files in os.walk(directory):
+    for root, dirs, files in os.walk(DIREC):
         # Remove __pycache__ directories
         for dir_name in dirs:
             if dir_name == "__pycache__":
