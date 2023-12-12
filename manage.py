@@ -4,6 +4,9 @@ import os
 import sys
 import shutil
 from pathlib import Path
+from django.conf import settings
+from django.core.management import call_command
+
 DIREC = Path(__file__).resolve().parent
 
 def remove_pycache_and_migrations():
@@ -25,13 +28,31 @@ def remove_pycache_and_migrations():
             if file_name == 'db.sqlite3' and input('Are you sure you want to delete the database? Yes / No:\t').lower() in ['yes', 'y']:
                 os.remove(file_name)
 
+def load_data():
+    fixture_files = [
+        'class',
+        'att'
+    ]
+
+    # Iterate over each fixture file and load it
+    for fixture_file in fixture_files:
+        call_command(f'loaddata {( fixture_file + ".json")}')
+
+    print('All fixtures have been installed successfully!')
+    exit()
+
+
 def custom_commands():
-    
-    if sys.argv[1] == 'rollback':
-        if input('Are you sure you want to delete all pycache and migration? Yes / No:\t').lower() in ['yes','y' ]:
-            remove_pycache_and_migrations()
-        else:
-            print('No changes to pycache and migration made')
+
+    match sys.argv[1]:
+        case 'rollback':
+            if input('Are you sure you want to delete all pycache and migration? Yes / No:\t').lower() in ['yes','y' ]:
+                remove_pycache_and_migrations()
+            else:
+                print('No changes to pycache and migration made')
+        case 'load':
+            load_data()
+            
 
 def main():
     """Run administrative tasks."""
