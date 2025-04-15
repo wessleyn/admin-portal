@@ -25,6 +25,6 @@ style==1.1.0
 typing_extensions==4.7.1
 tzdata==2023.3
 update==0.0.1
-virtualenv==20.24.2
+virtualenv==20.26.6
 django-autocomplete-light>=3.9.7
 
